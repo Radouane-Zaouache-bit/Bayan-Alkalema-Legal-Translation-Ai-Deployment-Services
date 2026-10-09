@@ -14,7 +14,7 @@
 <meta name="twitter:title" content="Legal Translation Dubai | Arabic · English · French | Bayan Alkalema">
 <meta name="twitter:description" content="Specialist legal translation in Dubai: Arabic, English and French. UAE Ministry of Justice-accredited sworn translators for contracts, court and corporate documents, with 24-hour rush service.">
 <meta name="twitter:image" content="https://bayanalkalema.com/logo.png">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "name": "Bayan Alkalema Legal Translation LLC", "alternateName": ["Bayan Alkalema", "بيان الكلمة للترجمة القانونية"], "url": "https://bayanalkalema.com/", "logo": "https://bayanalkalema.com/logo.png", "image": "https://bayanalkalema.com/logo.png", "description": "Specialist legal translation in Dubai: Arabic, English and French. UAE Ministry of Justice-accredited sworn translators for contracts, court and corporate documents, with 24-hour rush service.", "email": "translation@bayanalkalema.com", "telephone": "+971544986633", "address": {"@type": "PostalAddress", "addressLocality": "Dubai", "addressCountry": "AE"}, "areaServed": [{"@type": "Country", "name": "United Arab Emirates"}, {"@type": "Place", "name": "Gulf Cooperation Council"}], "knowsLanguage": ["ar", "en", "fr"], "serviceType": ["Legal translation", "Certified translation", "Rush translation", "Bulk and tender translation"], "sameAs": ["https://linkedin.com/in/radouane-zaouache-510a142a"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "name": "Bayan Alkalema Legal Translation LLC", "alternateName": ["Bayan Alkalema", "بيان الكلمة للترجمة القانونية"], "url": "https://bayanalkalema.com/", "logo": "https://bayanalkalema.com/logo.png", "image": "https://bayanalkalema.com/logo.png", "description": "Specialist legal translation in Dubai: Arabic, English and French. UAE Ministry of Justice-accredited sworn translators for contracts, court and corporate documents, with 24-hour rush service.", "email": "translation@bayanalkalema.com", "telephone": "+971544986633", "address": {"@type": "PostalAddress", "addressLocality": "Dubai", "addressCountry": "AE"}, "areaServed": [{"@type": "Country", "name": "United Arab Emirates"}, {"@type": "Place", "name": "Gulf Cooperation Council"}], "knowsLanguage": ["ar", "en", "fr"], "serviceType": ["Legal translation", "Certified translation", "Rush translation", "Bulk and tender translation", "Interpretation", "Conference audiovisual equipment rental"], "sameAs": ["https://linkedin.com/in/radouane-zaouache-510a142a"]}</script>
 <style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -327,6 +327,52 @@ footer{padding-block:32px;border-top:1px solid var(--hairline);background:var(--
 .card a.more{display:inline-block;margin-top:14px;color:var(--accent);text-decoration:none;font-size:15px;font-weight:600}
 .card a.more::after{content:" \203A"}
 .card a.more:hover{text-decoration:underline}
+.g7{grid-template-columns:repeat(4,1fr)}
+.g7>.card.feat{grid-column:span 2}
+@media (max-width:1040px){.g7{grid-template-columns:repeat(2,1fr)}.g7>.card.feat{order:-1}}
+@media (max-width:600px){.g7{grid-template-columns:1fr}.g7>.card.feat{grid-column:auto;order:0}}
+
+/* ---- interpretation card + dialog ---- */
+.g7>.card.wide,.g7>.card.half{grid-column:span 2}
+@media (max-width:1040px){.g7>.card.half{grid-column:auto}}
+@media (max-width:600px){.g7>.card.wide{grid-column:auto}}
+.interp-card{cursor:pointer}
+.card button.more{display:inline-block;margin-top:14px;padding:0;border:0;background:none;cursor:pointer;color:var(--accent);font:inherit;font-size:15px;font-weight:600;text-align:left}
+.card button.more::after{content:" \203A"}
+.card button.more:hover{text-decoration:underline}
+.idlg{padding:0;border:1px solid var(--hairline);border-radius:20px;background:var(--bg);color:var(--ink);width:min(760px,calc(100% - 28px));max-height:88vh;overflow:auto;box-shadow:0 30px 80px rgba(0,0,0,.35)}
+.idlg::backdrop{background:rgba(8,5,14,.62);backdrop-filter:blur(3px)}
+.idlg-inner{position:relative;padding:34px 32px 30px}
+.idlg-close{position:absolute;top:12px;right:14px;width:38px;height:38px;border-radius:50%;border:1px solid var(--hairline);background:var(--bg);color:var(--ink);font-size:24px;line-height:1;cursor:pointer}
+.idlg-close:hover{border-color:var(--accent);color:var(--accent)}
+.idlg-head{display:flex;gap:16px;align-items:flex-start;margin-bottom:22px;padding-right:36px}
+.idlg-head .icon{width:36px;height:36px;flex:none;color:var(--accent);margin-top:2px}
+.idlg-head h3{font-size:24px;margin:0 0 4px}
+.idlg-head p{margin:0;color:var(--ink-dim);font-size:15px}
+.idlg-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--hairline);border:1px solid var(--hairline);border-radius:14px;overflow:hidden}
+.isub{background:var(--bg);padding:18px 18px;display:flex;gap:12px;align-items:flex-start}
+.isub svg{width:24px;height:24px;flex:none;color:var(--accent);margin-top:2px}
+.isub h4{font-size:16px;margin:0 0 4px}
+.isub p{margin:0;font-size:14px;line-height:1.5;color:var(--ink-dim)}
+.ilangs{margin:18px 0 0;padding:18px;border:1px solid var(--hairline);border-radius:14px}
+.ilangs h4{font-size:13px;letter-spacing:.06em;text-transform:uppercase;margin:0 0 10px;color:var(--ink-dim)}
+.ilangs ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.ilangs li{padding:6px 14px;border:1px solid var(--hairline);border-radius:980px;font-size:15px;font-weight:500}
+.ilangs p{margin:12px 0 0;font-size:13.5px;line-height:1.5;color:var(--ink-dim)}
+.isub.span2{grid-column:span 2}
+.isub p a{color:var(--accent);font-weight:600;text-decoration:none}
+.isub p a:hover{text-decoration:underline}
+.acc-body a.more{color:var(--accent);font-weight:600;text-decoration:none}
+.acc-body a.more::after{content:" \203A"}
+.acc-body a.more:hover{text-decoration:underline}
+@media (max-width:600px){.isub.span2{grid-column:auto}}
+.idlg-note{margin:18px 0 18px;font-size:14px;line-height:1.55;color:var(--ink-dim)}
+.idlg-cta{display:inline-block}
+.idlg-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px 22px}
+.idlg-more{color:var(--accent);font-weight:600;font-size:15px;text-decoration:none}
+.idlg-more::after{content:" \203A"}
+.idlg-more:hover{text-decoration:underline}
+@media (max-width:600px){.idlg-inner{padding:26px 18px 22px}.idlg-grid{grid-template-columns:1fr}.idlg-head h3{font-size:21px}}
 </style>
 
 
@@ -398,12 +444,18 @@ footer{padding-block:32px;border-top:1px solid var(--hairline);background:var(--
         <h2>Every stage of a legal document's life.</h2>
         <p>From a single contract to a government tender, scoped to the level of scrutiny the document actually needs.</p>
       </div>
-      <div class="grid reveal">
+      <div class="grid g7 reveal">
         <div class="card">
           <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h12l4 4v12H4z"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>
           <h3>Standard Legal Translation</h3>
           <p>Certified-grade accuracy for contracts, agreements, and corporate documents on a 2–5 day turnaround.</p>
           <a class="more" href="/legal-translation-dubai/">Certified legal translation in Dubai</a>
+        </div>
+        <div class="card feat">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="9" r="5"/><path d="M9 13.5L7.5 21l4.5-2.5 4.5 2.5L15 13.5"/><path d="M10 9l1.5 1.5L14.5 7.5"/></svg>
+          <h3>Attestation Services</h3>
+          <p>The right order of attestation steps for documents issued abroad for use in the UAE, or UAE documents for use abroad, with certified Arabic translation where the receiving body requires it.</p>
+          <a class="more" href="/document-attestation-uae/">Document attestation in the UAE</a>
         </div>
         <div class="card">
           <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
@@ -422,12 +474,18 @@ footer{padding-block:32px;border-top:1px solid var(--hairline);background:var(--
           <h3>Legal Consultation + Translation</h3>
           <p>Expert review alongside translation for M&amp;A contracts and complex regulatory agreements.</p>
         </div>
-        <div class="card">
+        <div class="card wide interp-card" id="interpretation" data-open-interp>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 14v-2.5a7.5 7.5 0 0 1 15 0V14"/><rect x="2.8" y="13.5" width="3.6" height="5.8" rx="1.6"/><rect x="17.6" y="13.5" width="3.6" height="5.8" rx="1.6"/><path d="M19.4 19.3v.2a2.3 2.3 0 0 1-2.3 2.3H14"/><path d="M12.2 21.8h1.8"/></svg>
+          <h3>Interpretation Services</h3>
+          <p>Live interpreting between Arabic, English, French, Spanish, Russian, Chinese, Turkish, German and Urdu: simultaneous and consecutive, hearings, police and notary sessions, depositions and business meetings. Conference audiovisual equipment is also available to rent.</p>
+          <button type="button" class="more" data-open-interp aria-haspopup="dialog">View interpretation services</button>
+        </div>
+        <div class="card half">
           <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v16"/></svg>
           <h3>Bulk &amp; Tender Translation</h3>
           <p>Multi-document projects for government and international-organization tenders, with terminology held consistent across every file.</p>
         </div>
-        <div class="card">
+        <div class="card half">
           <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M17 20a5 5 0 0 0-10 0"/><circle cx="12" cy="8" r="4"/></svg>
           <h3>Retainer Programs</h3>
           <p>A dedicated allocation and account manager for law firms and corporations with ongoing translation needs.</p>
@@ -459,16 +517,17 @@ footer{padding-block:32px;border-top:1px solid var(--hairline);background:var(--
           </div>
         </details>
         <details>
-          <summary><span class="label"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.4 8.4 0 0 1-8.4 8.4 8.3 8.3 0 0 1-3.8-.9L3 21l1.9-5.8a8.3 8.3 0 0 1-.9-3.7A8.4 8.4 0 1 1 21 11.5z"/></svg><span>Interpretation Services</span></span><span class="chev">+</span></summary>
+          <summary><span class="label"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a3 3 0 0 1 3 3v5a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3z"/><path d="M6 11a6 6 0 0 0 12 0M12 17v4M9 21h6"/></svg><span>Conference Equipment Rental</span></span><span class="chev">+</span></summary>
           <div class="acc-body">
-            <p>Simultaneous and consecutive interpretation for depositions, hearings, arbitration, and business negotiations — Arabic, English, and French — coordinated through our vetted network of professional conference interpreters.</p>
-            <p>Bayan Alkalema stays your single point of contact for briefing, terminology alignment, and scheduling, so interpretation and document translation stay consistent on the same matter.</p>
+            <p>For conferences, hearings, arbitration sessions and corporate events with international participants: interpretation booths and consoles, receivers and headsets, microphones and sound, and projectors and screens.</p>
+            <p>Rent the equipment on its own, or together with our interpreters and receive one quote for the whole event.</p>
             <div class="tagrow">
-              <span class="tag">Simultaneous</span>
-              <span class="tag">Consecutive</span>
-              <span class="tag">Depositions &amp; hearings</span>
-              <span class="tag">Business negotiations</span>
+              <span class="tag">Interpretation booths</span>
+              <span class="tag">Receivers &amp; headsets</span>
+              <span class="tag">Microphones &amp; sound</span>
+              <span class="tag">Projectors &amp; screens</span>
             </div>
+            <p style="margin-top:18px"><a class="more" href="/conference-equipment-rental-dubai/">See conference equipment rental</a></p>
           </div>
         </details>
       </div>
@@ -637,6 +696,31 @@ footer{padding-block:32px;border-top:1px solid var(--hairline);background:var(--
 
 </main>
 
+<dialog id="interp-dialog" class="idlg" aria-labelledby="idlg-title">
+  <div class="idlg-inner">
+    <button type="button" class="idlg-close" aria-label="Close" data-close-interp>&times;</button>
+    <div class="idlg-head">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 14v-2.5a7.5 7.5 0 0 1 15 0V14"/><rect x="2.8" y="13.5" width="3.6" height="5.8" rx="1.6"/><rect x="17.6" y="13.5" width="3.6" height="5.8" rx="1.6"/><path d="M19.4 19.3v.2a2.3 2.3 0 0 1-2.3 2.3H14"/><path d="M12.2 21.8h1.8"/></svg>
+      <div>
+        <h3 id="idlg-title">Interpretation Services</h3>
+        <p>Pick the setting that fits, then the language pair. Nine languages covered, more on request, plus conference equipment for rent.</p>
+      </div>
+    </div>
+    <div class="idlg-grid">
+      <div class="isub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h2M7 8v8M11 5v14M15 8v8M19 10v4"/></svg><div><h4>Simultaneous interpretation</h4><p>Real-time interpreting for conferences, arbitration hearings, board meetings and multilingual events.</p></div></div>
+      <div class="isub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h9a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H8l-3 3v-3H4z"/><path d="M17 9h1a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2v3l-3-3h-4"/></svg><div><h4>Consecutive interpretation</h4><p>The interpreter speaks after each segment: ideal for depositions, interviews, negotiations and site visits.</p></div></div>
+      <div class="isub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M6 7h12M6 7l-3 7a3 3 0 0 0 6 0zM18 7l-3 7a3 3 0 0 0 6 0z"/></svg><div><h4>Court &amp; sworn interpretation</h4><p>Hearings and proceedings, with interpreters holding a valid UAE Ministry of Justice interpreter card where the authority requires one.</p></div></div>
+      <div class="isub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg><div><h4>Police &amp; notary sessions</h4><p>Witness statements, interviews and signings at police stations and notary offices, with the interpreter present on the day.</p></div></div>
+      <div class="isub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 15a7 7 0 0 1 14 0"/><path d="M9 20c1 1 4 1 6 0"/><path d="M12 8V4"/></svg><div><h4>Whispered interpretation</h4><p>Quiet, on-the-spot interpreting (chuchotage) for one or two listeners in a meeting or hearing, with no equipment needed.</p></div></div>
+      <div class="isub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><path d="M3 20a5 5 0 0 1 10 0M11 20a5 5 0 0 1 10 0"/></svg><div><h4>Business negotiations &amp; meetings</h4><p>Contract talks, due-diligence sessions and client meetings, with terminology agreed with you in advance.</p></div></div>
+      <div class="isub span2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a3 3 0 0 1 3 3v5a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3z"/><path d="M6 11a6 6 0 0 0 12 0M12 17v4M9 21h6"/></svg><div><h4>Conference audiovisual equipment rental</h4><p>Interpretation booths and consoles, receivers and headsets, microphones and sound, projectors and screens. Rent it on its own or together with interpreters. <a href="/conference-equipment-rental-dubai/">Equipment rental page</a></p></div></div>
+    </div>
+    <div class="ilangs"><h4>Interpretation languages</h4><ul><li>English</li><li dir="rtl" lang="ar">العربية</li><li lang="fr">Français</li><li lang="es">Español</li><li lang="ru">Русский</li><li lang="zh">中文</li><li lang="tr">Türkçe</li><li lang="de">Deutsch</li><li dir="rtl" lang="ur">اردو</li></ul><p>Any combination of these languages, for example Arabic &#8644; Spanish or French &#8644; Russian. Need another language? Ask us.</p></div>
+    <p class="idlg-note">Interpreters are coordinated through our vetted network. Bayan Alkalema stays your single point of contact for briefing, terminology and scheduling. Tell us the language pair, date and time, venue, and who the interpreter is for.</p>
+    <div class="idlg-actions"><a class="btn filled idlg-cta" href="#contact" data-close-interp data-prefill-interp>Request an interpreter</a><a class="idlg-more" href="/interpretation-services-dubai/">Read the full interpretation page</a></div>
+  </div>
+</dialog>
+
 <footer>
   <div class="fwrap">
     <div class="fbrand">
@@ -647,7 +731,9 @@ footer{padding-block:32px;border-top:1px solid var(--hairline);background:var(--
       </div>
     </div>
     <ul class="flinks" style="list-style:none;padding:0;margin:0">
-      <li><a href="#services">Services</a></li><li><a href="/legal-translation-dubai/">Legal Translation</a></li><li><a href="/certified-sworn-translation-dubai/">Certified &amp; Sworn</a></li><li><a href="/urgent-legal-translation-dubai/">Rush Translation</a></li>
+      <li><a href="#services">Services</a></li><li><a href="/legal-translation-dubai/">Legal Translation</a></li><li><a href="/certified-sworn-translation-dubai/">Certified &amp; Sworn</a></li><li><a href="/urgent-legal-translation-dubai/">Rush Translation</a></li><li><a href="/document-attestation-uae/">Attestation</a></li>
+      <li><a href="/interpretation-services-dubai/">Interpretation</a></li>
+      <li><a href="/conference-equipment-rental-dubai/">Equipment Rental</a></li>
       <li><a href="#why">Why Us</a></li>
       <li><a href="#process">Process</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -764,6 +850,29 @@ footer{padding-block:32px;border-top:1px solid var(--hairline);background:var(--
       }, function(){ /* ignore db errors, keep the static seed */ });
     }).catch(function(){ /* db not available in this view */ });
   })();
+})();
+</script>
+
+<script>
+(function(){
+  var dlg=document.getElementById('interp-dialog'); if(!dlg) return;
+  function openD(){ if(typeof dlg.showModal==='function'){ if(!dlg.open) dlg.showModal(); } else { dlg.setAttribute('open',''); } }
+  function closeD(){ if(typeof dlg.close==='function'){ dlg.close(); } else { dlg.removeAttribute('open'); } }
+  document.querySelectorAll('[data-open-interp]').forEach(function(el){
+    el.addEventListener('click',function(e){ e.preventDefault(); e.stopPropagation(); openD(); });
+  });
+  var fl=document.querySelector('a[href="#interpretation"]');
+  if(fl && !fl.hasAttribute('data-open-interp')){ fl.addEventListener('click',function(e){ e.preventDefault(); openD(); }); }
+  dlg.addEventListener('click',function(e){ if(e.target===dlg) closeD(); });
+  dlg.querySelectorAll('[data-close-interp]').forEach(function(el){
+    el.addEventListener('click',function(){
+      if(el.hasAttribute('data-prefill-interp')){
+        var ta=document.querySelector('#contact textarea[name="message"]');
+        if(ta && !ta.value){ ta.value='Interpretation request. Language pair (from/to): \nDate and time: \nVenue: \nWho the interpreter is for: '; }
+      }
+      closeD();
+    });
+  });
 })();
 </script>
 

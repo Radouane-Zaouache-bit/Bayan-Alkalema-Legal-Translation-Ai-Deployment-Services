@@ -335,7 +335,8 @@ footer{padding-block:32px;border-top:1px solid var(--hairline);background:var(--
 .topnav{display:none;gap:22px;font-size:13px}
 .topnav a{text-decoration:none;color:var(--ink-dim)}
 .topnav a:hover,.topnav a[aria-current]{color:var(--ink)}
-@media (min-width:960px){.topnav{display:flex}}
+.topnav a{white-space:nowrap}
+@media (min-width:1120px){.topnav{display:flex}}
 .btn.small{font-size:14px;padding:7px 16px}
 .btn.outline{border:1px solid var(--hairline);color:var(--ink)}
 .crumbs{font-size:13px;color:var(--ink-dim);padding-top:16px}
@@ -367,13 +368,58 @@ section{padding-block:72px}
 .fbrand .mark{width:36px;height:36px}
 .acc summary{padding:22px 24px;font-size:17px}
 .acc .acc-body{padding:0 24px 24px}
+/* related grid: six cards, three by two */
+.grid.rel{grid-template-columns:repeat(3,1fr)}
+@media (max-width:1040px){.grid.rel{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:600px){.grid.rel{grid-template-columns:1fr}}
+/* interpretation page */
+.grid.g6{grid-template-columns:repeat(3,1fr)}
+.grid.g4{grid-template-columns:repeat(4,1fr)}
+@media (max-width:1040px){.grid.g4{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:600px){.grid.g4{grid-template-columns:1fr}}
+@media (max-width:1040px){.grid.g6{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:600px){.grid.g6{grid-template-columns:1fr}}
+.langgrid{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;max-width:900px;margin:0 auto}
+.langgrid .lg{display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:132px;padding:16px 18px;border:1px solid var(--hairline);border-radius:16px;background:var(--bg)}
+.langgrid .lg b{font-family:var(--f-display);font-size:22px;font-weight:600;line-height:1.2}
+.langgrid .lg span{font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-dim);margin-top:4px}
+.checklist{list-style:none;padding:0;margin:0 auto;max-width:720px;display:grid;gap:12px}
+.checklist li{display:flex;gap:12px;align-items:flex-start;color:var(--ink-dim);font-size:16px;line-height:1.5}
+.checklist li::before{content:"";flex:none;width:20px;height:20px;margin-top:2px;border-radius:50%;background:var(--accent) no-repeat center/12px url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7'/%3E%3C/svg%3E")}
+.checklist li strong{color:var(--ink)}
+/* attestation page */
+.chain{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:12px;counter-reset:c}
+.chain li{counter-increment:c;display:flex;gap:12px;align-items:flex-start;color:var(--ink-dim);font-size:15px;line-height:1.45}
+.chain li::before{content:counter(c);flex:none;width:26px;height:26px;border-radius:50%;background:var(--accent);color:#fff;font-size:13px;font-weight:600;display:flex;align-items:center;justify-content:center}
+.chain li strong{color:var(--ink)}
+.tbl-wrap{max-width:1000px;margin:0 auto;border:1px solid var(--hairline);border-radius:18px;overflow:hidden;background:var(--bg)}
+.att{width:100%;border-collapse:collapse;font-size:15px}
+.att th{text-align:left;font-family:var(--f-display);font-weight:600;font-size:13px;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-dim);background:var(--bg-alt);padding:14px 18px}
+.att td{padding:14px 18px;border-top:1px solid var(--hairline);color:var(--ink-dim);vertical-align:top;line-height:1.45}
+.att td:first-child{color:var(--ink);font-weight:600}
+@media (max-width:720px){
+  .att thead{display:none}
+  .att,.att tbody,.att tr,.att td{display:block;width:100%}
+  .att tr{padding:14px 18px;border-top:1px solid var(--hairline)}
+  .att tr:first-child{border-top:none}
+  .att td{border:none;padding:4px 0}
+  .att td:first-child{font-size:17px;margin-bottom:4px}
+  .att td[data-label]::before{content:attr(data-label);display:block;font-size:11px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--accent-3);margin-top:6px}
+}
+.flow{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px 6px;max-width:900px;margin:0 auto}
+.flow .chip{font-size:13px}
+.flow .arr{color:var(--accent);font-weight:600}
+.g7{grid-template-columns:repeat(4,1fr)}
+.g7>.card:last-child{grid-column:span 2}
+@media (max-width:1040px){.g7{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:600px){.g7{grid-template-columns:1fr}.g7>.card:last-child{grid-column:auto}}
 @media (max-width:600px){.acc summary{padding:18px 18px}.acc .acc-body{padding:0 18px 20px}section{padding-block:56px}}
 </style>
 </head>
 <body>
 <header class="topbar"><div class="wrap">
   <a class="brand" href="/"><img src="/logo.png" alt="" width="28" height="28">Bayan Alkalema</a>
-  <nav class="topnav" aria-label="Main"><a href="/">Home</a><a href="/legal-translation-dubai/">Legal Translation</a><a href="/certified-sworn-translation-dubai/" aria-current="page">Certified &amp; Sworn</a><a href="/urgent-legal-translation-dubai/">Rush Translation</a><a href="/#contact">Contact</a></nav>
+  <nav class="topnav" aria-label="Main"><a href="/">Home</a><a href="/legal-translation-dubai/">Legal Translation</a><a href="/certified-sworn-translation-dubai/" aria-current="page">Certified &amp; Sworn</a><a href="/urgent-legal-translation-dubai/">Rush Translation</a><a href="/document-attestation-uae/">Attestation</a><a href="/interpretation-services-dubai/">Interpretation</a><a href="/conference-equipment-rental-dubai/">Equipment</a><a href="/#contact">Contact</a></nav>
   <a class="btn filled small" href="#contact">Get a quote</a>
 </div></header>
 <main>
@@ -404,7 +450,7 @@ section{padding-block:72px}
       <div class="grid reveal">
         <div class="card"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg><h3>Certified translation</h3><p>The translation carries a signed and stamped declaration from the translator that it is complete and accurate. This is what courts and government bodies usually expect.</p></div>
         <div class="card"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20l4-1 11-11-3-3L5 16z"/><path d="M14 6l3 3"/></svg><h3>Sworn translator</h3><p>A translator accredited by the UAE Ministry of Justice and sworn in to translate faithfully. In everyday use in the UAE, sworn and certified translation point to the same thing: a translation done and signed by an accredited translator.</p></div>
-        <div class="card"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h12l4 4v12H4z"/><path d="M8 9h8M8 13h8M8 17h5"/></svg><h3>Notarisation and attestation</h3><p>Separate steps done by other bodies, such as a notary public or the Ministry of Foreign Affairs, once the translation exists. Whether you need them depends on who receives the document. We can arrange notarisation on request.</p></div>
+        <div class="card"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h12l4 4v12H4z"/><path d="M8 9h8M8 13h8M8 17h5"/></svg><h3>Notarisation and attestation</h3><p>Separate steps done by other bodies, such as a notary public or the Ministry of Foreign Affairs. For documents that need them, notarisation and attestation of the original normally come first, and the certified translation is prepared afterwards. Which steps you need depends on who receives the document. We can arrange notarisation on request, before the translation step.</p></div>
       </div>
     </div>
   </section>
@@ -456,7 +502,7 @@ section{padding-block:72px}
   <section class="alt" id="related">
     <div class="wrap">
       <div class="section-head reveal"><div class="eyebrow">Related</div><h2>More from Bayan Alkalema.</h2></div>
-      <div class="grid reveal"><div class="card"><h3>Standard Legal Translation</h3><p>Certified legal translation of contracts, court and corporate documents in Arabic, English and French.</p><a class="more" href="/legal-translation-dubai/">Read more</a></div><div class="card"><h3>Rush Translation</h3><p>A 24-hour guarantee for closings, filings and disputes that cannot wait.</p><a class="more" href="/urgent-legal-translation-dubai/">Read more</a></div><div class="card"><h3>All services</h3><p>Bulk and tender work, retainers, legal consultation and interpretation.</p><a class="more" href="/#services">See services</a></div></div>
+      <div class="grid rel reveal"><div class="card"><h3>Standard Legal Translation</h3><p>Certified legal translation of contracts, court and corporate documents in Arabic, English and French.</p><a class="more" href="/legal-translation-dubai/">Read more</a></div><div class="card"><h3>Rush Translation</h3><p>A 24-hour guarantee for closings, filings and disputes that cannot wait.</p><a class="more" href="/urgent-legal-translation-dubai/">Read more</a></div><div class="card"><h3>Attestation Services</h3><p>The order of attestation steps for documents used in the UAE or abroad, with certified Arabic translation where required.</p><a class="more" href="/document-attestation-uae/">Read more</a></div><div class="card"><h3>Conference Equipment Rental</h3><p>Interpretation booths, headsets, microphones, sound, projectors and screens, with or without interpreters.</p><a class="more" href="/conference-equipment-rental-dubai/">Read more</a></div><div class="card"><h3>Interpretation Services</h3><p>Live interpreters for hearings, police and notary sessions, depositions and business meetings in nine languages, plus conference equipment for rent.</p><a class="more" href="/interpretation-services-dubai/">Read more</a></div><div class="card"><h3>All services</h3><p>Bulk and tender work, retainers, legal consultation and paralegal support, alongside everything above.</p><a class="more" href="/#services">See services</a></div></div>
     </div>
   </section>
 
@@ -500,7 +546,7 @@ section{padding-block:72px}
       </div>
     </div>
     <ul class="flinks" style="list-style:none;padding:0;margin:0">
-      <li><a href="/">Home</a></li><li><a href="/legal-translation-dubai/">Legal Translation</a></li><li><a href="/certified-sworn-translation-dubai/">Certified &amp; Sworn</a></li><li><a href="/urgent-legal-translation-dubai/">Rush Translation</a></li><li><a href="#contact">Contact</a></li>
+      <li><a href="/">Home</a></li><li><a href="/legal-translation-dubai/">Legal Translation</a></li><li><a href="/certified-sworn-translation-dubai/">Certified &amp; Sworn</a></li><li><a href="/urgent-legal-translation-dubai/">Rush Translation</a></li><li><a href="/document-attestation-uae/">Attestation</a></li><li><a href="/interpretation-services-dubai/">Interpretation</a></li><li><a href="/conference-equipment-rental-dubai/">Equipment</a></li><li><a href="#contact">Contact</a></li>
     </ul>
     <div class="fcopy">&copy; <span id="year"></span> Bayan Alkalema Legal Translation LLC. All rights reserved.</div>
   </div>
